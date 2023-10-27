@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.demos"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity android:name="com.calendarDemo.activity.ScheduleDetail" android:label="@string/app_name" android:screenOrientation="sensorPortrait">
+ <intent-filter>
+  <action android:name="android.intent.action.MAIN" /> 
+  <category android:name="android.intent.category.LAUNCHER" /> 
+  </intent-filter>
+  </activity>
+  <activity android:name="com.calendarDemo.activity.AddUser" android:screenOrientation="sensorPortrait" /> 
+  <activity android:name="com.calendarDemo.activity.DetailScreen" android:screenOrientation="sensorPortrait" /> 
+  <activity android:name="com.calendarDemo.activity.song" android:screenOrientation="sensorPortrait" /> 
+      
+  <receiver android:name="com.calendarDemo.activity.AlarmReceiver"></receiver>
+       
+    </application>
+
+</manifest>
